@@ -1,0 +1,18 @@
+
+[package]
+name = "slow"
+version = "0.0.1"
+authors = ["some author"]
+
+[profile.dev]
+opt-level=3
+debug = false
+
+[[bin]]
+name = "slow"
+path = "slow.rs"
+
+[dependencies]
+byteorder = "*"
+rand = "*"
+time = "*"
